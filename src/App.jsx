@@ -86,6 +86,10 @@ function App() {
         </div>
       ) : (
         <>
+          <button onClick={()=> {
+            setData(null);
+            setPostOffice([]);
+          }}>←</button>
           <p className="bold">Pincode: {pincode}</p>
           <p>
             <span className="bold">Message:</span> {data?.Message}
